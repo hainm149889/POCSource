@@ -1,6 +1,6 @@
-import React from 'react';
-import {StyleProp, View, ViewStyle} from 'react-native';
-import {Icons} from '@themes';
+import { Icons } from "@themes";
+import React from "react";
+import { StyleProp, View, ViewStyle } from "react-native";
 
 export interface IconProps {
   name: string;
@@ -10,7 +10,7 @@ export interface IconProps {
 }
 
 export function Icon(props: IconProps) {
-  const {name, size, color, styles} = props;
+  const { name, size, color, styles } = props;
   return (
     <View style={styles}>
       <Icons.EzbileIcon name={name} size={size} color={color} style={styles} />
